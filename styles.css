@@ -1,0 +1,98 @@
+
+
+* {
+    box-sizing: border-box;
+    --webkit-box-sizing: border-box;
+}
+
+body {
+    font-family:  Tahoma, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    background-color: rgb(240, 240, 240);
+    margin-top: 0;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.parent {
+    width: 600px;
+    background-color: rgb(1, 163, 169);
+    box-shadow: 0 1px 2px rgba( 0, 0, 0, 0.3);
+    /* text-align: center; */
+    margin: 50px auto 0;
+    overflow: hidden;
+    padding: 40px 30px 20px;
+    border-radius: 6px;
+}
+
+.parent input {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.parent input:focus {
+    outline: none;
+}
+
+.parent input::placeholder {
+    color: rgb(151, 149, 149);
+    transition: 0.3s;
+}
+
+.parent input:hover::placeholder {
+    opacity: 0;
+}
+
+.parent .buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.parent .buttons span {
+    background-color: rgb(245, 56, 191);
+    color: white;
+    padding: 6px 10px;
+    border-radius: 6px;
+    box-shadow: 0 1px 2px rgba( 0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.parent .buttons span:hover {
+    background-color: rgb(252, 12, 184);
+}
+
+
+.parent .results {
+    margin: 20px  auto 0;
+    background-color: rgb(53, 202, 207);
+    border: 2px dashed white;
+    color: white;
+    border-radius: 6px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 1px 2px rgba( 0, 0, 0, 0.1);
+    font-size: 17px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+
+
+.parent .results span span {
+    font-weight: bold;
+    color:  rgb(74, 0, 53);
+}
+
+.parent .results span .keys {
+    display: block;
+}
